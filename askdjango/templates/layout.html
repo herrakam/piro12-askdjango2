@@ -5,10 +5,12 @@
     <title>에스크장고 중급 블로그</title>
 </head>
 <body>
-    <h1>Askdjango Blog</h1>
+    <h1>
+        <a href="{% url "root" %}">Askdjango Blog</a>
+    </h1>
 
     {% if user.is_authenticated %}
-        {{user}}
+        <a href="{% url "profile" %}" > {{user}}</a>
         로그아웃
     {%else%}
         회원가입 ,
