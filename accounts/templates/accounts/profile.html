@@ -3,10 +3,10 @@
     <h2>{{ user.username}}`s Profile</h2>
 
     <h3>email</h3>
-    {{ user.email |default:"&dash"}}
+    {{ user.email |default:"&dash;"}}
 
     <h3>Bio</h3>
 
-    {{ user.profile.bio|default:'&dash'}}
+    {{ user.profile.bio|default:'&dash;'}}
 
     {% endblock %}
